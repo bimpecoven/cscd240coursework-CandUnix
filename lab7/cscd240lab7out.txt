@@ -1,0 +1,65 @@
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab7$ ./lab7
+Please enter your name: Blake
+Student Name: Blake
+
+Enter in the number of Labs: 3
+Please enter your Labs score(1/3): 98
+Please enter your Labs score(2/3): 78
+Please enter your Labs score(3/3): 100
+Lab average: 92.0
+Enter in the number of Homeworks: 15
+Invalid total! Total not in range. (1-10)
+Enter in the number of Homeworks: 5
+Please enter your Homeworks score(1/5): 100
+Please enter your Homeworks score(2/5): 56
+Please enter your Homeworks score(3/5): 76
+Please enter your Homeworks score(4/5): 95
+Please enter your Homeworks score(5/5): 40
+Homework average: 73.4
+Enter in the number of Quizzes: 2
+Please enter your Quizzes score(1/2): 99
+Please enter your Quizzes score(2/2): 54
+Quiz average: 76.5
+Enter in the number of Exams: 5
+Please enter your Exams score(1/5): 12
+Please enter your Exams score(2/5): 78
+Please enter your Exams score(3/5): 86
+Please enter your Exams score(4/5): 54
+Please enter your Exams score(5/5): 76
+Exam average: 61.2
+Your weighted percentage is: 72.7
+Your final grade is: 1.9
+
+
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab7$ ./lab7
+Please enter your name: Blake Impecoven
+Student Name: Blake Impecoven
+
+Enter in the number of Labs: 4  
+Please enter your Labs score(1/4): 100
+Please enter your Labs score(2/4): 100
+Please enter your Labs score(3/4): 95
+Please enter your Labs score(4/4): 90
+Lab average: 96.2
+Enter in the number of Homeworks: 3
+Please enter your Homeworks score(1/3): 100
+Please enter your Homeworks score(2/3): 78
+Please enter your Homeworks score(3/3): 95
+Homework average: 91.0
+Enter in the number of Quizzes: 5
+Please enter your Quizzes score(1/5): 85
+Please enter your Quizzes score(2/5): 75
+Please enter your Quizzes score(3/5): 80
+Please enter your Quizzes score(4/5): 90
+Please enter your Quizzes score(5/5): 70
+Quiz average: 80.0
+Enter in the number of Exams: 5
+Please enter your Exams score(1/5): 100
+Please enter your Exams score(2/5): 100
+Please enter your Exams score(3/5): 100
+Please enter your Exams score(4/5): 75
+Please enter your Exams score(5/5): 70
+Exam average: 89.0
+Your weighted percentage is: 90.1
+Your final grade is: 3.4
+

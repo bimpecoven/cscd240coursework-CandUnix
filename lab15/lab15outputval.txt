@@ -1,0 +1,699 @@
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab15$ valgrind ./lab15
+==3910== Memcheck, a memory error detector
+==3910== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3910== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3910== Command: ./lab15
+==3910== 
+openInputFile_Args
+openInputFile_Args -- Exit.
+
+openInputFile_Prompt
+Please enter the name of the file you desire to open: lab15in.txt
+openInputFile_Prompt -- Exit.
+
+
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+==3910== Invalid write of size 8
+==3910==    at 0x40131E: generateSentence (lab15.c:96)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x52029c0 is 0 bytes after a block of size 32 alloc'd
+==3910==    at 0x4C2DC90: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x40113A: generateSentence (lab15.c:75)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x401340: generateSentence (lab15.c:97)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x52029c0 is 0 bytes after a block of size 32 alloc'd
+==3910==    at 0x4C2DC90: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x40113A: generateSentence (lab15.c:75)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x401385: display (lab15.c:108)
+==3910==    by 0x400C9B: main (cscd240lab15.c:39)
+==3910==  Address 0x52029c0 is 0 bytes after a block of size 32 alloc'd
+==3910==    at 0x4C2DC90: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x40113A: generateSentence (lab15.c:75)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x401FAD: clean (myUtils.c:28)
+==3910==    by 0x400CAC: main (cscd240lab15.c:40)
+==3910==  Address 0x52029c0 is 0 bytes after a block of size 32 alloc'd
+==3910==    at 0x4C2DC90: calloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x40113A: generateSentence (lab15.c:75)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910== 
+girl drove from a boy 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 2
+
+
+Articles:
+the
+a
+one
+some
+any
+
+Nouns:
+boy
+girl
+dog
+
+Verbs:
+drove
+jumped
+walked
+skipped
+
+Prepositions:
+to
+from
+over
+under
+on
+
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+boy drove on some dog 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+boy drove under some girl 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 3
+
+Add a word to: 
+1) Articles
+2) Nouns
+3) Verbs
+4) Prepositions
+1
+What word would you like to add: 
+two
+
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 2
+
+
+Articles:
+==3910== Invalid read of size 8
+==3910==    at 0x402037: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5202fd0 is 0 bytes inside a block of size 48 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F122: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4EA8A3B: puts (ioputs.c:36)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203040 is 0 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F134: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4EA8A3B: puts (ioputs.c:36)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203041 is 1 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4EB2301: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1289)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203042 is 2 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4EB2314: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1289)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203041 is 1 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4EC736B: __GI_mempcpy (memcpy.S:71)
+==3910==    by 0x4EB224F: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1307)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203040 is 0 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 2
+==3910==    at 0x4EC737B: __GI_mempcpy (memcpy.S:83)
+==3910==    by 0x4EB224F: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1307)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203041 is 1 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+the
+a
+one
+==3910== Invalid read of size 4
+==3910==    at 0x4EC738E: __GI_mempcpy (memcpy.S:95)
+==3910==    by 0x4EB224F: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1307)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x4013E0: displayAllWords (lab15.c:116)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203130 is 0 bytes inside a block of size 5 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+some
+any
+two
+
+Nouns:
+boy
+girl
+dog
+
+Verbs:
+drove
+jumped
+walked
+skipped
+
+Prepositions:
+to
+from
+over
+under
+on
+
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 3
+
+Add a word to: 
+1) Articles
+2) Nouns
+3) Verbs
+4) Prepositions
+3
+What word would you like to add: 
+ran
+
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 2
+
+
+Articles:
+the
+a
+one
+some
+any
+two
+
+Nouns:
+boy
+girl
+dog
+
+Verbs:
+==3910== Invalid read of size 8
+==3910==    at 0x402037: displayTwoD (myUtils.c:58)
+==3910==    by 0x401416: displayAllWords (lab15.c:120)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x5203280 is 0 bytes inside a block of size 40 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F122: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4EA8A3B: puts (ioputs.c:36)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x401416: displayAllWords (lab15.c:120)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x52032f0 is 0 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F134: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4EA8A3B: puts (ioputs.c:36)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x401416: displayAllWords (lab15.c:120)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x52032f1 is 1 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4EB2301: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1289)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x401416: displayAllWords (lab15.c:120)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x52032f4 is 4 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4EB2314: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1289)
+==3910==    by 0x4EA8AE2: puts (ioputs.c:41)
+==3910==    by 0x402041: displayTwoD (myUtils.c:58)
+==3910==    by 0x401416: displayAllWords (lab15.c:120)
+==3910==    by 0x400CDB: main (cscd240lab15.c:43)
+==3910==  Address 0x52032f3 is 3 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+drove
+jumped
+walked
+skipped
+ran
+
+Prepositions:
+to
+from
+over
+under
+on
+
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 4
+
+==3910== Invalid read of size 8
+==3910==    at 0x4017ED: allWordsSorted (lab15.c:194)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910==  Address 0x5202fd0 is 0 bytes inside a block of size 48 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F207: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401811: allWordsSorted (lab15.c:194)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910==  Address 0x5203040 is 0 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F224: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401811: allWordsSorted (lab15.c:194)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910==  Address 0x5203041 is 1 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x4018EC: allWordsSorted (lab15.c:213)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910==  Address 0x5203280 is 0 bytes inside a block of size 40 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F207: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401910: allWordsSorted (lab15.c:213)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910==  Address 0x52032f0 is 0 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F224: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401910: allWordsSorted (lab15.c:213)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910==  Address 0x52032f1 is 1 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Source and destination overlap in strcpy(0x52039c0, 0x52039c0)
+==3910==    at 0x4C2F2A6: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x402168: sortChar (myUtils.c:84)
+==3910==    by 0x4019B0: allWordsSorted (lab15.c:227)
+==3910==    by 0x400D86: main (cscd240lab15.c:61)
+==3910== 
+a any boy dog drove from girl jumped one over ran skipped some the to two under walked on 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+==3910== Invalid read of size 8
+==3910==    at 0x4011BE: generateSentence (lab15.c:82)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203288 is 8 bytes inside a block of size 40 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F122: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4011C8: generateSentence (lab15.c:82)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203340 is 0 bytes inside a block of size 7 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F134: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4011C8: generateSentence (lab15.c:82)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203341 is 1 bytes inside a block of size 7 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x4011F1: generateSentence (lab15.c:83)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203288 is 8 bytes inside a block of size 40 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F207: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401209: generateSentence (lab15.c:83)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203340 is 0 bytes inside a block of size 7 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F224: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401209: generateSentence (lab15.c:83)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203341 is 1 bytes inside a block of size 7 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x40128E: generateSentence (lab15.c:90)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5202fd0 is 0 bytes inside a block of size 48 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F122: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401298: generateSentence (lab15.c:90)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203040 is 0 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F134: strlen (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401298: generateSentence (lab15.c:90)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203041 is 1 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x4012C1: generateSentence (lab15.c:91)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5202fd0 is 0 bytes inside a block of size 48 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F207: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4012D9: generateSentence (lab15.c:91)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203040 is 0 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 1
+==3910==    at 0x4C2F224: strcpy (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x4012D9: generateSentence (lab15.c:91)
+==3910==    by 0x400C82: main (cscd240lab15.c:38)
+==3910==  Address 0x5203041 is 1 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+boy jumped on the dog 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+boy walked under a boy 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+boy walked from the boy 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+dog jumped over the boy 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 1
+
+dog ran from any girl 
+
+ -- Menu -- 
+1) Generate a sentence
+2) Display all words
+3) Add a word
+4) Display all words sorted
+5) Exit the program
+Make a selection: 5
+
+Program Ending
+==3910== Invalid read of size 8
+==3910==    at 0x401FAD: clean (myUtils.c:28)
+==3910==    by 0x400DF9: main (cscd240lab15.c:76)
+==3910==  Address 0x5202fd0 is 0 bytes inside a block of size 48 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid free() / delete / delete[] / realloc()
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x400DF9: main (cscd240lab15.c:76)
+==3910==  Address 0x5203040 is 0 bytes inside a block of size 4 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid free() / delete / delete[] / realloc()
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x400DF9: main (cscd240lab15.c:76)
+==3910==  Address 0x5202fd0 is 0 bytes inside a block of size 48 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D08: main (cscd240lab15.c:48)
+==3910== 
+==3910== Invalid read of size 8
+==3910==    at 0x401FAD: clean (myUtils.c:28)
+==3910==    by 0x400E23: main (cscd240lab15.c:78)
+==3910==  Address 0x5203280 is 0 bytes inside a block of size 40 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid free() / delete / delete[] / realloc()
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x400E23: main (cscd240lab15.c:78)
+==3910==  Address 0x52032f0 is 0 bytes inside a block of size 6 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FB7: clean (myUtils.c:28)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== Invalid free() / delete / delete[] / realloc()
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x400E23: main (cscd240lab15.c:78)
+==3910==  Address 0x5203280 is 0 bytes inside a block of size 40 free'd
+==3910==    at 0x4C2CE10: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==3910==    by 0x401FCF: clean (myUtils.c:32)
+==3910==    by 0x40172F: addWord (lab15.c:179)
+==3910==    by 0x400D40: main (cscd240lab15.c:54)
+==3910== 
+==3910== 
+==3910== HEAP SUMMARY:
+==3910==     in use at exit: 199 bytes in 28 blocks
+==3910==   total heap usage: 123 allocs, 106 frees, 1,809 bytes allocated
+==3910== 
+==3910== LEAK SUMMARY:
+==3910==    definitely lost: 152 bytes in 19 blocks
+==3910==    indirectly lost: 47 bytes in 9 blocks
+==3910==      possibly lost: 0 bytes in 0 blocks
+==3910==    still reachable: 0 bytes in 0 blocks
+==3910==         suppressed: 0 bytes in 0 blocks
+==3910== Rerun with --leak-check=full to see details of leaked memory
+==3910== 
+==3910== For counts of detected and suppressed errors, rerun with: -v
+==3910== ERROR SUMMARY: 387 errors from 42 contexts (suppressed: 0 from 0)
+

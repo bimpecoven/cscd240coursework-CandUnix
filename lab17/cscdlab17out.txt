@@ -1,0 +1,42 @@
+Blakes-MacBook-Air:lab17 Blake$ ./lab17
+openInputFile_Prompt
+Please enter the name of the file you desire to open: lab17in.txt
+openInputFile_Prompt -- Exit.
+
+1) Print the array sorted by symbol
+2) Print the array sorted by company name
+3) Print the array sorted by current price
+4) Quit
+Your choice: 1
+
+Google - GOOG - 721.11
+Hillenbrand Inc - HI - 30.65
+Microsoft - MSFT - 53.24
+Charles Schwab - SCHW - 31.37
+1) Print the array sorted by symbol
+2) Print the array sorted by company name
+3) Print the array sorted by current price
+4) Quit
+Your choice: 2
+
+Charles Schwab - SCHW - 31.37
+Google - GOOG - 721.11
+Hillenbrand Inc - HI - 30.65
+Microsoft - MSFT - 53.24
+1) Print the array sorted by symbol
+2) Print the array sorted by company name
+3) Print the array sorted by current price
+4) Quit
+Your choice: 3
+
+Hillenbrand Inc - HI - 30.65
+Charles Schwab - SCHW - 31.37
+Microsoft - MSFT - 53.24
+Google - GOOG - 721.11
+1) Print the array sorted by symbol
+2) Print the array sorted by company name
+3) Print the array sorted by current price
+4) Quit
+Your choice: 4
+
+all done

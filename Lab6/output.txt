@@ -1,0 +1,70 @@
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab6$ ./lab6 test.txt
+The mean is: 2.000000
+The median is: 3.000000
+The standard deviation is: 0.000000
+The mean is: 5.000000
+The median is: 7.000000
+The standard deviation is: 1.500000
+The mean is: -15.600000
+The median is: 7.000000
+The standard deviation is: 8.800000
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab6$ 
+
+
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab6$ ./lab6 test2.txt
+(empty file)
+
+
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab6$ ./lab6
+Enter the name of the file: test.txt
+The mean is: 2.000000
+The median is: 3.000000
+The standard deviation is: 0.500000
+The mean is: 5.000000
+The median is: 7.000000
+The standard deviation is: 2.000000
+The mean is: -15.600000
+The median is: 7.000000
+The standard deviation is: 8.300000
+
+
+Enter the name of the file: invalidfile.txt
+Invalid file name, enter the name of the file: test.txt
+The mean is: 2.000000
+The median is: 3.000000
+The standard deviation is: 0.500000
+The mean is: 5.000000
+The median is: 7.000000
+The standard deviation is: 2.000000
+The mean is: -15.600000
+The median is: 7.000000
+The standard deviation is: 8.300000
+
+
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab6$ ./lab6
+Enter the name of the file: invalidfile2.txt 
+Invalid file name, enter the name of the file: wrongfile.txt
+Invalid file name, enter the name of the file: test.txt
+The mean is: 2.000000
+The median is: 3.000000
+The standard deviation is: 0.500000
+The mean is: 5.000000
+The median is: 7.000000
+The standard deviation is: 2.000000
+The mean is: -15.600000
+The median is: 7.000000
+The standard deviation is: 8.300000
+
+
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab6$ ./lab6 invalidfile.txt
+Enter the name of the file: test.txt
+The mean is: 2.000000
+The median is: 3.000000
+The standard deviation is: 0.000000
+The mean is: 5.000000
+The median is: 7.000000
+The standard deviation is: 1.500000
+The mean is: -15.600000
+The median is: 7.000000
+The standard deviation is: 8.800000
+

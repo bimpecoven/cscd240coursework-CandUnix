@@ -1,0 +1,78 @@
+Blakes-MacBook-Air:lab11 Blake$ ./a.out
+sizeof(ptr) 8
+sizeof(twod) 48
+sizeof(twod[0]) 12
+sizeof(twod[0][0]) 4
+twod 0x7fff54f14ba0
+ptr 0x7fff54f14ba0
+&twod[0] 0x7fff54f14ba0
+&twod[0][0] 0x7fff54f14ba0
+&twod[0][1] 0x7fff54f14ba4
+&twod[0][2] 0x7fff54f14ba8
+&twod[1] 0x7fff54f14bac
+&ptr 0x7fff54f14b98
+
+
+twod + 3 is: 0x7fff54f14bc4
+*(*(twod + 1)) is: 10
+*twod + 1 is: 0x7fff54f14ba4
+*twod[2] is: 20
+*(twod + 2) + 2 is: 0x7fff54f14bc0
+twod[1] is: 0x7fff54f14bac
+twod[1][2] is: 12
+
+ptr 0x7fff54f14ba0
+twod [1] 0x7fff54f14bac
+ptr[1] 1
+ptr + 1 0x7fff54f14ba4
+*(ptr + 1) 1
+twod + 1 0x7fff54f14bac
+*twod + 1 0x7fff54f14ba4
+ptr[8] 22
+Function 1 -- Start.
+function1
+0 1 2 
+10 11 12 
+20 21 22 
+30 31 32 
+Function 1 -- Exit.
+
+Function 2 -- Start.
+function2
+2 1 0 
+12 11 10 
+22 21 20 
+32 31 30 
+Function 2 -- Exit.
+
+Function 3 -- Start.
+function3
+0 1 2 
+10 11 12 
+20 21 22 
+30 31 32 
+Function 3 -- Exit.
+
+Function 4 -- Start.
+function4
+2 1 0 
+12 11 10 
+22 21 20 
+32 31 30 
+Function 4 -- Exit.
+
+Function 5 -- Start.
+function5
+2 1 0 
+12 11 10 
+22 21 20 
+32 31 30 
+Function 5 -- Exit.
+
+Function 6 -- Start.
+function6
+0 1 2 
+10 11 12 
+20 21 22 
+30 31 32 
+Function 6 -- Exit.

@@ -1,0 +1,101 @@
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab19$ valgrind ./lab19
+==3874== Memcheck, a memory error detector
+==3874== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==3874== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==3874== Command: ./lab19
+==3874== 
+openInputFile_Prompt
+Please enter the name of the file you desire to open: words.txt
+openInputFile_Prompt -- Exit.
+
+countRecords
+countRecords -- Exit.
+
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 1
+azure - 5, abate - 5, abash - 5, abase - 5, abandoned - 9, abandon - 7, abalone - 7, abaft - 5, abacus - 6, aback - 5, aardvark - 8, a - 1, back - 4, bacillus - 8, bachelor - 8, bacchanalia - 11, baccalaureate - 13, baby - 4, babushka - 8, baboon - 6, babel - 5, babe - 4, babble - 6, b - 1, 
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 2
+Enter a word: firstWord
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 1
+firstWord - 9, azure - 5, abate - 5, abash - 5, abase - 5, abandoned - 9, abandon - 7, abalone - 7, abaft - 5, abacus - 6, aback - 5, aardvark - 8, a - 1, back - 4, bacillus - 8, bachelor - 8, bacchanalia - 11, baccalaureate - 13, baby - 4, babushka - 8, baboon - 6, babel - 5, babe - 4, babble - 6, b - 1, 
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 3
+Enter a word: wordEnd
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 1
+firstWord - 9, azure - 5, abate - 5, abash - 5, abase - 5, abandoned - 9, abandon - 7, abalone - 7, abaft - 5, abacus - 6, aback - 5, aardvark - 8, a - 1, back - 4, bacillus - 8, bachelor - 8, bacchanalia - 11, baccalaureate - 13, baby - 4, babushka - 8, baboon - 6, babel - 5, babe - 4, babble - 6, b - 1, wordEnd - 7, 
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 4
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 1
+a - 1, aardvark - 8, aback - 5, abacus - 6, abaft - 5, abalone - 7, abandon - 7, abandoned - 9, abase - 5, abash - 5, abate - 5, azure - 5, b - 1, babble - 6, babe - 4, babel - 5, baboon - 6, babushka - 8, baby - 4, baccalaureate - 13, bacchanalia - 11, bachelor - 8, bacillus - 8, back - 4, firstWord - 9, wordEnd - 7, 
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 5
+Enter a word: a
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 1
+aardvark - 8, aback - 5, abacus - 6, abaft - 5, abalone - 7, abandon - 7, abandoned - 9, abase - 5, abash - 5, abate - 5, azure - 5, b - 1, babble - 6, babe - 4, babel - 5, baboon - 6, babushka - 8, baby - 4, baccalaureate - 13, bacchanalia - 11, bachelor - 8, bacillus - 8, back - 4, firstWord - 9, wordEnd - 7, 
+1) Print the list
+2) Add First
+3) Add Last
+4) Sort
+5) Remove Item
+6) Quit
+Choice --> 6
+==3874== 
+==3874== HEAP SUMMARY:
+==3874==     in use at exit: 0 bytes in 0 blocks
+==3874==   total heap usage: 56 allocs, 56 frees, 1,190 bytes allocated
+==3874== 
+==3874== All heap blocks were freed -- no leaks are possible
+==3874== 
+==3874== For counts of detected and suppressed errors, rerun with: -v
+==3874== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+

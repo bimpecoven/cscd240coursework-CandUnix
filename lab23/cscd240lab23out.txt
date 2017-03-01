@@ -1,0 +1,47 @@
+blakeimp@blakeimp-VirtualBox:~/cscd240/lab23$ ./lab23
+Enter a string: lets chop.up,this.string
+1) Enter a new string
+2) Parse the string
+3) Read existing output file
+4) Quit
+Your choice: 2
+1) Enter a new string
+2) Parse the string
+3) Read existing output file
+4) Quit
+Your choice: 3
+Enter a string: out.txt
+lets - 4
+chop - 4
+up - 2
+this - 4
+string - 6
+1) Enter a new string
+2) Parse the string
+3) Read existing output file
+4) Quit
+Your choice: 1
+Enter a string: Enter a string: now,lets,chop up.this string
+1) Enter a new string
+2) Parse the string
+3) Read existing output file
+4) Quit
+Your choice: 2
+1) Enter a new string
+2) Parse the string
+3) Read existing output file
+4) Quit
+Your choice: 3
+Enter a string: out.txt
+now - 3
+lets - 4
+chop - 4
+up - 2
+this - 4
+string - 6
+1) Enter a new string
+2) Parse the string
+3) Read existing output file
+4) Quit
+Your choice: 4
+
